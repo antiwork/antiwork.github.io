@@ -2,10 +2,17 @@
 layout: none
 ---
 [{% for post in site.posts %}{
-	"company-name": "{{post.company-name}}",
-	"city": "{{post.city}}",
-	"state": "{{post.state}}",
-	"employees": "{{post.employees}}",
-	"tags": "{{ post.tags | array_to_sentence_string }}",
-	"categories": "{{post.categories}}"
+"project-name":"{{post.project-name}}",
+"project-url":"{{post.project-url}}",
+"project-issue":"{{post.project-issue}}",
+"project-logo":"{{post.project-logo}}",
+"project-about":"{{post.project-about}}",
+"contact-email":"{{post.contact-email}}",
+"contact-name":"{{post.contact-name}}",
+"contact-github":"{{post.contact-github}}",
+"is-techical":"{{post.is-technical}}",
+"job-title":"{{post.job-title}}",
+"job-desc":"{{post.job-desc}}",
+"job-difficulty":"{{post.job-difficulty}}",
+"tags": "{{ post.tags }}",
 }{% if forloop.rindex0 > 0 %},{% endif %}{% endfor %}]
