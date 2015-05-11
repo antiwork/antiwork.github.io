@@ -1,24 +1,27 @@
 ---
 layout: entry
 
-project-name: antiwork
-project-url: github.com/antiwork
-project-issue: github.com/antiwork/issues/1
-project-logo: http://www.theuntz.com/media/member/6/4/2/64265/ampersand.jpg
-project-about: Antiwork is a free "job" board for Free Open Source Software (FOSS). 
+project-url: "http://github.com/antiwork"
+project-name: "Antiwork"
+project-about: "Antiwork is a \"job\" site for open source projects"
+project-logo: "http://i.imgur.com/CQ92EWB.png"
+contact-email: "anonwasere 'that sign' gmail "
+contact-name: "stefan"
+contact-github: "http://github.com/panamafrancis"
+job-kind: "creative"
+job-title: "Growth Hacker Needed"
+job-issue: "none"
+job-level: "Any"
 
-contact-email: 
-contact-name: stefan
-contact-github: github.com/panamafrancis
-
-is-techical: yes
-
-job-title: "\"Sales\"exec to reachout to new \"clients\""
-job-desc: "Help grow antiwork, approach open source projects across github and the wider web introducing them to the site and hopefully encourage them to add job postings and spread the word."
-job-difficulty: 3
-
-tags: 
- - html
- - css
-
+tags:
+ - copywriting
 ---
+
+We need to get existing FOSS projects to advertise positions on this site and so encourage potential contributors to visit.
+
+You could start by finding 3-5 potential projects either through github, mailing lists or through various meetup groups you’re a part of. Help identify current weaknesses in respect to the project ambitions and the current makeup of the team, politely suggest antiwork as a route to further the project thereby bringing them onboard.
+
+Make sure to put across that at no point does antiwork ask for money.
+
+If you’re enthusiastic about helping a new project grow and you’re looking to gain experience in this area then it’d be great to have you onboard.
+

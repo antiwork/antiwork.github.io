@@ -4,27 +4,188 @@ layout: default
 
 <div class="container">
 
-{% include lead.html %}
+    {% include lead.html %}
 
-<p>
-<h2>How to add a "job" posting</h2>
-<br />
-<ol>
-    <li>Fork this repo</li>
-    <li>Add a new post to _posts of your fork</li>
-    <li>Submit pull request</li>
-    <li>Wait for me...</li>
-</ol>
-<br />
-</p>
+    <p>
+    <h2>How to add a "job" posting</h2>
+    <br />
+    <ol>
+        <li>Fork this repo</li>
+        <li>Add a new post to _posts of your fork</li>
+        <li>Test your post looks ok before committing (install jekyll)</li>
+        <li>Submit pull request</li>
+        <li>Wait for me...</li>
+    </ol>
+    <br />
+    </p>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <form name="markdowngen" class="form-horizontal" >
+                <fieldset>
+                    <legend>Generate a "job" posting</legend>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="projecturl">Project URL</label>  
+                        <div class="col-md-6">
+                            <input id="projecturl" name="projecturl" type="text" placeholder="github/bitbucket..." class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="projectname">Project Name</label>  
+                        <div class="col-md-6">
+                            <input id="projectname" name="projectname" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="projectabout">Project About</label>  
+                        <div class="col-md-6">
+                            <input id="projectabout" name="projectabout" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="projectlogo">Project Logo URL</label>  
+                        <div class="col-md-6">
+                            <input id="projectlogo" name="projectlogo" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="contactemail">Contact Email</label>  
+                        <div class="col-md-6">
+                            <input id="contactemail" name="contactemail" type="text" placeholder="" class="form-control input-md">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="contactname">Contact Name</label>  
+                        <div class="col-md-6">
+                            <input id="contactname" name="contactname" type="text" placeholder="" class="form-control input-md">
 
-  <!--
- TODO 
- Form to generate post markdown
-   - should be a split window with the dropdowns and such on one side and the markdown on the other
-  -->
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="contactgithub">Contact Github</label>  
+                        <div class="col-md-6">
+                            <input id="contactgithub" name="contactgithub" type="text" placeholder="" class="form-control input-md">
+                        </div>
+                    </div>
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="jobkind">Job Kind</label>
+                        <div class="col-md-6">
+                            <div class="radio">
+                                <label for="jobkind-0">
+                                    <input type="radio" name="jobkind" id="radios-0" value="technical" checked="checked">
+                                    Technical
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="jobkind-1">
+                                    <input type="radio" name="jobkind" id="radios-1" value="creative">
+                                    Creative
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="jobname">Job Title</label>  
+                        <div class="col-md-6">
+                            <input id="jobtitle" name="jobtitle" type="text" placeholder="frontend/backend/hacker needed" class="form-control input-md" required="">
 
-{% include footer.html %}
+                        </div>
+                    </div>
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="jobdesc">Job Description</label>
+                        <div class="col-md-6">                     
+                            <textarea class="form-control" id="jobdesc" name="jobdesc"></textarea>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="jobissue">Relevant issue/bug ticket</label>  
+                        <div class="col-md-6">
+                            <input id="jobissue" name="jobissue" type="text" placeholder="" class="form-control input-md" required="">
+
+                        </div>
+                    </div>
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="joblevel">Job Level</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="joblevel-0">
+                                    <input type="radio" name="joblevel" id="joblevel-0" value="Any" checked="checked">
+                                    Any
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="joblevel-1">
+                                    <input type="radio" name="joblevel" id="joblevel-1" value="Junior">
+                                    Junior
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="joblevel-2">
+                                    <input type="radio" name="joblevel" id="joblevel-2" value="Experienced">
+                                    Experienced
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="joblevel-3">
+                                    <input type="radio" name="joblevel" id="joblevel-3" value="Senior">
+                                    Senior
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="generate"></label>
+                        <div class="col-md-6">
+                            <button type="button" onclick="generateMarkdown()" id="generate" name="generate" class="btn btn-primary">Generate!</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-md-5">
+            <br />
+            <br />
+            <textarea style="min-height:400px;" class="form-control" id="postmarkdown" name="postmarkdown"></textarea>
+        </div>
+    </div>
+
+    {% include footer.html %}
 
 </div><!-- /.container -->
 </div>
+
+<script>
+     $('#tags').tokenField();
+    function generateMarkdown() {
+        var output = "---\nlayout: entry\n\n";
+        output += "project-url: \"" + document.markdowngen.projecturl.value +"\"\n";
+        output += "project-name: \"" + document.markdowngen.projectname.value +"\"\n";
+        output += "project-about: \"" + document.markdowngen.projectabout.value +"\"\n";
+        output += "project-logo: \"" + document.markdowngen.projectlogo.value +"\"\n";
+        output += "contact-email: \"" + document.markdowngen.contactemail.value +"\"\n";
+        output += "contact-name: \"" + document.markdowngen.contactname.value +"\"\n";
+        output += "contact-github: \"" + document.markdowngen.contactgithub.value +"\"\n";
+        output += "job-kind: \"" + document.querySelector('input[name="jobkind"]:checked').value +"\"\n";
+        output += "job-title: \"" + document.markdowngen.jobtitle.value +"\"\n";
+        output += "job-issue: \"" + document.markdowngen.jobissue.value +"\"\n";
+        output += "job-level: \"" + document.querySelector('input[name="joblevel"]:checked').value +"\"\n";
+        output += "tags: \n\n";
+        output += "\n---\n";
+        output += document.markdowngen.jobdesc.value +"\n";
+        document.getElementById("postmarkdown").value = output;
+        };
+</script>

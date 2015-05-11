@@ -1,24 +1,33 @@
 ---
 layout: entry
 
-project-name: antiwork
-project-url: github.com/antiwork
-project-issue: github.com/antiwork/issues/1
-project-logo: http://www.theuntz.com/media/member/6/4/2/64265/ampersand.jpg
-project-about: Antiwork is a free "job" board for Free Open Source Software (FOSS). 
+project-url: "http://github.com/antiwork"
+project-name: "Antiwork"
+project-about: "Antiwork is a \"job\" site for open source projects"
+project-logo: "http://i.imgur.com/CQ92EWB.png"
+contact-email: "anonwasere 'that sign' gmail "
+contact-name: "stefan"
+contact-github: "http://github.com/panamafrancis"
+job-kind: "technical"
+job-title: "Frontend Developer"
+job-issue: "none"
+job-level: "Any"
 
-contact-email: 
-contact-name: stefan
-contact-github: github.com/panamafrancis
-
-is-techical: yes
-
-job-title: Frontend developer to make Antiwork look more snazzy
-job-desc: Currently the site is oh so drab, if there's anyone around to give it a lick of paint.
-job-difficulty: 3
-
-tags: 
- - html
- - css
+tags:
+ - HTML
+ - CSS
+ - Javascript
+ - AngularJS
+ - ReactJS
 
 ---
+The site at the moment needs polishing. There isn't really a logo or a even a colour scheme and we're using bootstrap, which is sufficient for getting off the ground but isn't for the long term.
+
+> **Requirements:**
+
+> - Good working knowledge of HTML & CSS
+> - Ability to write high-performance, quality UI code
+> - Practical knowledge and experience of jQuery and vanilla JS
+> - Frameworks like backbone.js, AngularJS or React...
+> - Mobile / responsive design knowledge is a plus
+

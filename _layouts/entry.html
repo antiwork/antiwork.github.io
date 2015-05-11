@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% include lead.html %}
+<br />
+<br />
+<div class="row">
+    <div class="col-md-9">
+        <article class="post">
+        <h1 class="post-title">{{ page.job-title }}</h1>
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+        <h2>Job Description</h2>
+            {{ content }}
+        </article>
+    </div>
+    <div class="col-md-3">
+        <div class="project-preview">
+            <div class="project-logo" >
+                <img class="img-responsive center-block" src="{{ page.project-logo }}" />
+            </div>
+            <div class="project-info">
+                <h3 class="text-center">{{ page.project-name }}</h3>
+                <p>{{ page.project-about }}<br />
+            </div>
+            <div class="contact-info">
+                <dl class="dl-horizontal"> 
+                    <dt style="text-align:left !important; width:120px !important;">Contact Name</dt>
+                    <dd style="margin-left: 120px !important;">{{ page.contact-name }}</dd>
+                    <dt style="text-align:left !important; width:120px !important;">Contact Email</dt>
+                    <dd style="margin-left: 120px !important;">{{ page.contact-email }}</dd>
+                    <dt style="text-align:left !important; width:120px !important;">Contact Profile</dt>
+                    <dd style="margin-left: 120px !important;">{{ page.contact-github }}</dd>
+                    <dt style="text-align:left !important; width:120px !important;">Relevant Issue</dt>
+                    <dd style="margin-left: 120px !important;"><a href="{{ page.job-issue }}">{{ page.job-issue }}</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% include footer.html %}
+
